@@ -1,0 +1,7 @@
+openai>=1.40.0
+litellm>=1.44.0
+jupyter>=1.0.0
+ipykernel>=6.29.0
+ipython>=8.20.0
+requests>=2.31.0
+python-dotenv>=1.0.1
