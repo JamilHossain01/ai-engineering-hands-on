@@ -13,7 +13,7 @@
 - **October 2021:** Promoted to Backend Software Engineer. Took on leadership for a key project developing a microservices architecture to support the company's growing platform.
 - **March 2023:** Awarded the title of Senior Backend Software Engineer due to exemplary performance in scaling backend services, reducing downtime by 30% over six months.
 
-## Annual Performance History
+## Annual Performance Histor
 - **2020:**  
   - Completed onboarding successfully.  
   - Met expectations in delivering project milestones.  

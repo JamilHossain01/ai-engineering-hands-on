@@ -1,6 +1,5 @@
 import gradio as gr
 from dotenv import load_dotenv
-
 from implementation.answer import answer_question
 
 load_dotenv(override=True)
@@ -27,10 +26,8 @@ def main():
         return "", history + [{"role": "user", "content": message}]
 
     theme = gr.themes.Soft(font=["Inter", "system-ui", "sans-serif"])
-
     with gr.Blocks(title="Insurellm Expert Assistant", theme=theme) as ui:
         gr.Markdown("# 🏢 Insurellm Expert Assistant\nAsk me anything about Insurellm!")
-
         with gr.Row():
             with gr.Column(scale=1):
                 chatbot = gr.Chatbot(
@@ -41,7 +38,6 @@ def main():
                     placeholder="Ask anything about Insurellm...",
                     show_label=False,
                 )
-
             with gr.Column(scale=1):
                 context_markdown = gr.Markdown(
                     label="📚 Retrieved Context",
@@ -49,11 +45,9 @@ def main():
                     container=True,
                     height=600,
                 )
-
         message.submit(
             put_message_in_chatbot, inputs=[message, chatbot], outputs=[message, chatbot]
         ).then(chat, inputs=chatbot, outputs=[chatbot, context_markdown])
-
     ui.launch(inbrowser=True)
 
 
