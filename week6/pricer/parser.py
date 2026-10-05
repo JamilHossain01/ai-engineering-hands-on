@@ -1,7 +1,7 @@
 import json
 import re
 
-from items import Item
+from .items import Item
 
 MIN_CHARS = 600
 MIN_PRICE = 0.5
